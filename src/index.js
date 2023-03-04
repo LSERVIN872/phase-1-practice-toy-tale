@@ -78,7 +78,6 @@ function renderToys(toy) {
 }
 
 
-// add listener to 'Add Toy' button to show or hide form
 addBtn.addEventListener('click', () => {
   // hide & seek with the form
   addToy = !addToy
@@ -93,11 +92,11 @@ addBtn.addEventListener('click', () => {
   }
 })
 
-// start by getting all toys
+
 
 getToys().then(toys => {
   toys.forEach(toy => {
-    //function to render toys goes here or something
+  
     renderToys(toy)
   })
 })
